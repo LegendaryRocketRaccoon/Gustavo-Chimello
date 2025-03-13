@@ -1,0 +1,275 @@
+body{
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+
+    padding-top: 60px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white; 
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #181818;
+}
+
+.dark-mode nav ul li a {
+    color: #bbb;
+}
+
+.dark-mode .projeto {
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+}
+
+.dark-mode .botao-cv {
+    background: linear-gradient(45deg, #00c3ff, #0046b3);
+}
+
+.dark-mode .botao-cv:hover {
+    box-shadow: 0 0 30px #00c3ff;
+}
+
+#toggle-theme {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+#toggle-theme:hover {
+    background: #555;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.botao-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, aqua, #0860b3);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 45px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.botao-cv:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px aqua;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+    P { text-align: center }
+    H2 { text-align: center }
+}
+
+.perfil{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #222;
+    margin: 30px auto;
+}
+
+.projeto{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+@media(max-width: 600px){
+.perfil{
+    width: 120px;
+    height: 120px;
+}
+section{
+    padding: 10px;
+}
+}
+
+nav ul li a:hover{
+    color: #6bb0ff;
+    transform: scale(1.20);
+}
+
+.perfil:hover{
+transform: scale(1.1);
+transition: 0.3s ease-in-out;
+box-shadow: 0px 0px 30px aqua;
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#btnTopo:hover {
+    background-color: #6bb0ff;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 8px rgb(1, 78, 122);
+}
+
+.rodape{
+    background-color: #222;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+    text-align: center;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3 {
+    text-align: right;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+/*
+.Vigilante{
+
+    align-items:end;
+    justify-content:end;
+    height: 200px;
+    text-align:end;
+    margin: 0px auto;
+}
+*/
+
+.git{
+    text-decoration:underline;
+    color: darkblue;
+}
+
+.dark-mode .git{
+    text-decoration:underline;
+    color: aqua;
+}
