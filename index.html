@@ -1,116 +1,101 @@
 <!DOCTYPE html>
-<html lang = "pt-BR">
-
+<html lang="pt-BR">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport"
-    content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Gustavo Chimello</title>
 
-    <link rel="icon" href="imagens/minimalistic-raccoon-mark-of-excellence-stylish-raccoon-symbol-vector-removebg-preview.png">
+  <link rel="icon" href="imagens/minimalistic-raccoon-mark-of-excellence-stylish-raccoon-symbol-vector-removebg-preview.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<script src="https://kit.fontawesome.com/450f569ac2.js" crossorigin="anonymous"></script>
-
-<link rel="manifest" href="manifest.json">
-
+  <script src="https://kit.fontawesome.com/450f569ac2.js" crossorigin="anonymous"></script>
+  <link rel="manifest" href="manifest.json">
 </head>
-
 <body>
-    <header>
-        <h1>Meu Portfólio</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre"><i class="fas fa-user"></i>  Sobre</a></li>
-                <li><a href="#projetos"><i class="fas fa-code"></i>  Projetos</a></li>
-                <li><a href="#github"><i class="fa fa-github"></i>  GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/gustavo-chimello-4a8368302"><i class="fa fa-linkedin"></i>  LikedIn</a></li>
-            </ul>
-        </nav>
-    <a href="Currículo Gustavo Chimello.pdf" target="_blank" class="botao-cv">Currículo</a>
-    <button id="toggle-theme">Dark Mode On/Of</button>
-    </header>
-
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <img src="imagens/Furious Raccoon 5 Tec 1.png" alt="Minha Logo"
-        class="perfil">
-        <p>Olá. Sou um desenvolvedor interessado por <strong>tecnologia, física e robótica</strong>. 
-            Este portfólio apresenta alguns dos meus projetos.</p>
-    </section>
-
-    <section id="projetos">
-        <h2>Projetos</h2> 
-        <div class="projeto">
-            <h3>Projeto 1 - Projeto Educacional Nasa Space Apps</h3>
-            <p>Desenvolvimento de um projeto educacional relacionado a ODS.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2 - Interface para Saúde Mental</h3>
-            <p>Uma interface tecnológica para auxiliar na manutenção da saúde mental, alinhada ao ODS 3.</p>
-        </div>
-    </section>
-
-    <section id="github">
-        <h2>GitHub</h2>
-        <p>Me encontre no <b><a class="git" href="https://github.com/LegendaryRocketRaccoon"
-        target="_blank">GitHub</a></b>.</p>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🚀 Portfólio</div>
+    <nav>
+      <ul>
+        <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+        <li><a href="#projetos"><i class="fas fa-code"></i> Projetos</a></li>
+        <li><a href="#github"><i class="fa fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gustavo-chimello-4a8368302" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="Currículo Gustavo Chimello.pdf" target="_blank" class="botao-cv">Currículo</a>
+      <button id="toggle-theme" aria-label="Alternar tema">🌙</button>
     </div>
-    </section>
-    <footer class="rodape" id="contato">
-        <div class="rodape-div">
-    
-            <div class="rodape-div-1">
-                <div class="rodape-div-1-coluna">
-    
-                    <span><b>Contatos</b></span>
-                    <p>chimellogustavo17@gmail.com</p>
-                    <p>+55 54 991865829</p>
-                </div>
-            </div>
-    
-            <div class="rodape-div-2">
-                <div class="rodape-div-2-coluna">
-    
-                    <span><b>Links</b></span>
-                    <p><a href="#sobre">Sobre</a></p>
-                </div>
-            </div>
-    
-            <div class="rodape-div-3">
-                <div class="rodape-div-3-coluna">
-    
-                    <span><b>Outros</b></span>
-                    <p>Políticas de Privacidade</p>
-                </div>
-            </div>
-         <!--   <img src="imagens/Vigilante.png" alt="Minha Logo" class="Vigilante"> -->
+  </header>
 
+  <!-- HERO -->
+  <section id="hero">
+    <img src="imagens/Furious Raccoon 5 Tec 1.png" alt="Minha Logo" class="perfil">
+    <h1>Gustavo Chimello</h1>
+    <p>Desenvolvedor apaixonado por <strong>tecnologia, física e robótica</strong>.</p>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Sou um desenvolvedor em constante aprendizado. Este portfólio apresenta alguns dos meus projetos, explorando minha paixão por tecnologia, ciência e inovação.</p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <div class="card">
+        <h3>Projeto Educacional - NASA Space Apps</h3>
+        <p>Desenvolvimento de um projeto educacional relacionado aos ODS da ONU.</p>
+        <div class="card-links">
+          <a href="#" class="btn">Ver Código</a>
+          <a href="#" class="btn">Demo</a>
         </div>
-        <p class="rodape-direitos">Copyright © 2025 – Meu Portfólio - Todos os Direitos Reservados.</p>
-    </footer>
+      </div>
+      <div class="card">
+        <h3>Interface para Saúde Mental</h3>
+        <p>Interface tecnológica para auxiliar na manutenção da saúde mental (ODS 3).</p>
+        <div class="card-links">
+          <a href="#" class="btn">Ver Código</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <button id="btnTopo" onclick="voltarAoTopo()">▲</button>
-    <script>
-        function voltarAoTopo() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    </script>
+  <!-- GITHUB -->
+  <section id="github">
+    <h2>GitHub</h2>
+    <p>Confira meus repositórios no <a class="git" href="https://github.com/LegendaryRocketRaccoon" target="_blank">GitHub</a>.</p>
+  </section>
 
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer class="rodape" id="contato">
+    <div class="rodape-div">
+      <div>
+        <span><b>Contatos</b></span>
+        <p>chimellogustavo17@gmail.com</p>
+        <p>+55 54 991865829</p>
+      </div>
+      <div>
+        <span><b>Links</b></span>
+        <p><a href="#sobre">Sobre</a></p>
+        <p><a href="#projetos">Projetos</a></p>
+      </div>
+      <div>
+        <span><b>Outros</b></span>
+        <p>Políticas de Privacidade</p>
+      </div>
+    </div>
+    <p class="rodape-direitos">© 2025 – Portfólio Gustavo Chimello - Todos os Direitos Reservados.</p>
+  </footer>
 
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(reg => console.log('Service Worker registrado!', reg))
-            .catch(err => console.log('Erro no registro do Service Worker:', err));
-    }
-    </script>
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="btnTopo" onclick="voltarAoTopo()" aria-label="Voltar ao topo">▲</button>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
